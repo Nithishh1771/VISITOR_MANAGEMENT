@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>Pass-Generator</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='pass.css')}}">
+
+</head>
+<body class="body">
+    
+    <img src="{{url_for('static',filename='bg.jpg')}}" class="background">
+    <div class="block">
+        <center><h1 class="heading">Pass Generated</h1></center>
+    </div>
+    <div class="box">
+
+<div>
+    <form action="{{url_for('tq')}}" method="get" enctype="multipart/form-data" >
+   
+    
+    
+    <h1 class="pass_heading">
+        Visitor pass
+        <button type="submit" class="check_out">Check out</button>
+    </h1>
+    <hr>
+    <div class="pass">
+        <h2>Name : {{uname}}</h2>
+        <h2>Mobile NO : {{mobile}}</h2>
+        <h2>Gender : {{gender}}</h2>
+        <h2>Visit Purpose : {{pvisit}}</h2>
+        <p> Date : {{date}}</p>
+        <p> Time : {{time}}</p>
+        <p class="valid">Note : The pass is only vaild for four hours</p>
+    </div>
+</div>
+</form>
+    </div>
+
+
+</body>

@@ -1,0 +1,27 @@
+.box{
+    height: 500px;
+    width: 30%;
+    background-color: aqua;
+    margin-left: 40%;
+    margin-top: 15%;
+    color: white;
+    z-index: 3;
+    position: relative;
+    display: inline;
+}
+.background{
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    margin-top: 0%;
+}
+.visit{
+    margin-top: 20%;
+}
+.body{
+    margin-top: 0%;
+    margin-bottom:0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}

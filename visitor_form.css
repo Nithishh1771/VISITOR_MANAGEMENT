@@ -1,0 +1,101 @@
+.body{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.heading{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(13, 95, 145);
+z-index: 2;
+position: absolute;
+margin-top: 0%;
+}
+
+
+.text{
+    color: white;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-top: 7px;
+}
+.box{
+    height: 500px;
+    position: relative;
+    z-index: 2;
+    width: 33%;
+    color: white;
+    margin-left: 34%;
+    margin-top: 10%;
+    background-color: rgba(0, 0, 0,0.2);
+    border-radius: 20px;
+}
+.box:hover{
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+}
+.form_content{
+    margin-left: 80px;
+    margin-top: 40px;
+    display:inline;
+}
+.input_type{
+    margin-left: 20px;
+    margin-top: 40px;
+    display:inline;
+    
+}
+.input_type_name{
+    margin-left: 56px;
+    margin-top: 40px;
+    display:inline;
+}
+.input_type_email{
+    margin-left: 37px;
+    margin-top: 40px;
+    display:inline;
+}
+.input_type_idproof{
+    margin-left: 42px;
+    margin-top: 40px;
+    display:inline;
+    
+}
+.input_type_button_succes{
+    margin-left: 80px;
+    margin-top: 40px;
+    display:inline;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(34, 187, 51);
+    border-radius: 5px;
+}
+.input_type_button_succes:hover{
+    box-shadow:0 10px 20px rgb(0, 0, 0);
+    background-color: rgb(28, 213, 49);
+}
+.input_type_button_cancel:hover{
+    box-shadow:0 10px 20px rgb(0, 0, 0);
+    background-color: rgb(255, 0, 30);
+}
+.input_type_button_cancel{
+    margin-left: 40px;
+    margin-top: 40px;
+    display:inline;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(207, 20, 43);
+    border-radius: 5px;
+}
+.background{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+}
+.admin{
+    margin-left: 65%;
+}
+.signin{
+    color: white;
+}

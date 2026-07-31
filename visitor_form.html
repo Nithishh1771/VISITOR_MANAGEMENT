@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <title>Visitor Registrtion Form</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='visitor_form.css')}}">
+</head>
+
+<body class="body">
+   
+    <div class="heading">
+        <center>
+            <h1 class="text">Visiting Pass Form</h1>
+        </div>
+        </center>
+    </div>
+    <hr>
+ <img src="{{url_for('static',filename='bg.jpg')}}" class="background">
+    <div class="box">
+        
+<form action="/pass" method="post" enctype="multipart/form-data">
+    <div>
+        <label class="table">
+        <h3 class="form_content">Name :</h3>
+        </label>
+        <input type="text" name="username" required class="input_type_name" >
+    </div>
+    <div>
+        <label class="table">
+        <h3 class="form_content">Phone NO :</h3>
+        </label>
+        <input type="number" name="mobile" required class="input_type" >
+    </div>
+    <div>
+        <label class="table">
+        <h3 class="form_content" required>Gender:</h3>
+        </label>
+        <input type="radio" name="gender" class="input_type" value="Male" >Male
+        <input type="radio" name="gender" class="input_type" value="Female" >Female
+        <input type="radio" name="gender" class="input_type" value="Other" >Other     
+    </div>
+
+    <div>
+        <label class="table">
+        <h3 class="form_content">purpose of the visit:</h3>
+        
+        <select name="pvisit" class="input_type">
+<option value="">
+    ---select---
+</option>
+<option value="Family visit">
+       <center>Family visit</center>
+</option>
+<option value="Study">
+    Study
+</option>
+<option value="Medical Treatment">
+    Medical Treatment
+</option>
+<option value="Business">
+    Business
+</option>
+        </select>
+        </label>
+    </div>
+    <div>
+        <label class="table">
+        <h3 class="form_content">Email ID:</h3>
+        </label>
+        <input type="email" name="Email_ID" required class="input_type_email" >
+    </div>
+    <div>
+        <label class="table">
+        <h3 class="form_content">ID proof:</h3>
+        </label>
+        <input type="file" name="proof" class="input_type_idproof" >
+    </div>
+    <div class="table">
+        <button type="submit" class="input_type_button_succes">Apply</button>
+        <button type="reset" class="input_type_button_cancel">cancel</button>
+    </div>
+    <div>
+        <p class="admin">are you admin ? <a href="admin.html" class="signin"> sign-in</a></p>
+    </div>
+</form>
+
+    </div>
+</body>
